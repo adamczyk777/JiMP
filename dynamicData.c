@@ -13,4 +13,10 @@ void main(){
     for(i=0; i<5; i++){
         read(strings, i);
     }
+    int n;
+    for(n=0;n<5;n++){
+        printf("%s", strings[n]);
+        free(strings[n]);
+    }
+    free(*strings);
 }
